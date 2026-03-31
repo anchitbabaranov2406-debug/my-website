@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Путешествия мечты</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #4facfe;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #00c6ff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Путешествия мечты ✈️</h1>
+  <p>Открой мир вместе с нами</p>
+</header>
+
+<nav>
+  <a href="#">Главная</a>
+  <a href="#places">Места</a>
+  <a href="#about">О нас</a>
+</nav>
+
+<div class="container">
+
+  <div class="card" id="places">
+    <h2>🌴 Бали</h2>
+    <p>Идеальное место для отдыха: пляжи, джунгли и культура.</p>
+    <button onclick="alert('Вы выбрали Бали!')">Выбрать</button>
+  </div>
+
+  <div class="card">
+    <h2>🏔️ Швейцария</h2>
+    <p>Горы, озёра и невероятные пейзажи.</p>
+    <button onclick="alert('Вы выбрали Швейцарию!')">Выбрать</button>
+  </div>
+
+  <div class="card">
+    <h2>🏙️ Нью-Йорк</h2>
+    <p>Город, который никогда не спит.</p>
+    <button onclick="alert('Вы выбрали Нью-Йорк!')">Выбрать</button>
+  </div>
+
+  <div class="card" id="about">
+    <h2>О нас</h2>
+    <p>Мы помогаем людям находить лучшие места для путешествий и вдохновляться.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Путешествия мечты</p>
+</footer>
+
+</body>
+</html>
